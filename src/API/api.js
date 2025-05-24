@@ -32,7 +32,6 @@ async function updateTodo(id, newTodo) {
     try {
         const response = await fetch(url, options)
         const apiData = await response.json()
-        console.log(apiData)
         return apiData
     } catch (error) {
         console.error(error)
@@ -58,7 +57,6 @@ async function toggleTodo(id){
     try {
         const response = await fetch(url, options);
         const apiData = await response.json();
-        console.log(apiData)
         return apiData
     } catch (error) {
         console.error(error);
